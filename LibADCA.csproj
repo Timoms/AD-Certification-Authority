@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Timo Heckel</Authors>
+    <Company>Heckel.IT</Company>
+    <PackageLicenseFile></PackageLicenseFile>
+    <Description>Provides tools for signing a key with a predefined template</Description>
+    <Copyright>2020 - Timo Heckel</Copyright>
+    <PackageProjectUrl>https://github.com/Timoms/AD-Certification-Authority</PackageProjectUrl>
+    <PackageIcon>ADCA.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Timoms/AD-Certification-Authority</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>ADCA, SSL, OpenSSL, Certification, Certutil, Certreq</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <Version>1.2.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LICENSE.txt" />
+    <None Include="ADCA.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
